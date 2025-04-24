@@ -10,22 +10,31 @@
         <link rel="stylesheet" href="">
     </head>
 
-    <body>
+    <body id="corpo">
        <h1 id="apresentacao"> Seja bem-vindo</h1>
        <p id="horario"></p>
-       <p id="semana">b</p>
+       <P id="cumprimento"></P>
         
     <script type="text/javascript">
 
-        const horas = new Date()
-    
-        document.getElementById("horario").innerHTML = (`Horário Atual: ${horas.getHours()} : ${horas.getDate()}`)
+        const horas = new Date();
+        var hrs = horas.getHours();
 
-        if( horas >4 || horas < 5){
-            document.getElementById("horario").style.backgroundColor = ("pink")
+        document.getElementById("horario").innerHTML = (`Horário Atual: ${horas.getHours()} : ${horas.getMinutes()}`)
+
+        if(hrs >= 18 && hrs <=23){
+            document.getElementById("corpo").style.backgroundColor = "#4169E1"
+            document.getElementById("cumprimento").innerHTML = (`Tenha uma Boa Noite!`)
         }
-
-        
+        else if( hrs>= 0 && hrs <=6){
+            document.getElementById("corpo").style.backgroundColor = "#FFFFE0"
+            document.getElementById("cumprimento").innerHTML = (`Tenha uma Boa Madrugada`)
+        }
+        else if( hrs >= 6 && hrs <=12){
+            document.getElementById("corpo").style.backgroundColor = "#DDA0DD"
+            document.getElementById("cumprimento").innerHTML = (`Tenha um Bom dia`)
+        }
+    
 
 
     </script>
