@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Imagem Surpresa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+               body{
+                    background-color: #E0BFB8;
+            }
+                img{
+                    max-width: 250px;
+                    width: 250px;
+                    max-height: 200px;
+                    height: 200px;
+                    align-items: center;
+                }
+                h1{
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                
+        </style>
+
+        <h1>Imagem</h1>
+        <img id="figura" onmouseenter="imgEntrada()" onmouseleave="imgSaida()" src="img/esquisitao.jpg">
+
+        <script>
+
+            function imgEntrada (){
+                const img2 = document.getElementById("figura");
+                img2.src="img/gif Taylor.gif";
+            }
+
+            function imgSaida(){
+                const img3 = document.getElementById("figura");
+                img3.src="img/esquisitao.jpg";
+            }
+         
+
+        </script>
+     
+
+    </body>
+</html>
