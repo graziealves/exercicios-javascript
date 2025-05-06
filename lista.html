@@ -10,11 +10,19 @@
     </head>
     <body>
         <h1>PLANNER</h1>
-        <p>Adicionar Atividades</p>
-        <input type="text">
+        <p class="">Adicionar Atividades</p>
+    
+        <input id="intem" type="text" >
+        <button type="button" onclick="guardarTarefa()">Adicionar</button>
         
-        <script src="" async defer>
+        <script>
 
+        function guardarTarefa(){
+            var item = String(document.getElementById("item").value)
+            console.log(item)
+        }
+
+       
         </script>
     </body>
 </html>
