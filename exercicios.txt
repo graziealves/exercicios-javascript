@@ -1,0 +1,11 @@
+Lista de exercícios JavaScript
+
+1 - Somar - Feito
+2 - Saudação - Feito
+3 - Tabuada - 
+4 - Imagem - Feito
+5 - Vamos Contar
+
+
+
+
